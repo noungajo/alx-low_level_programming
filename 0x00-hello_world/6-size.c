@@ -1,5 +1,6 @@
 #include<stdio.h>
 /*
+* main -  this program prints the size
 * Description: Run puts and print statement
 * Return: Return 0 to exit function
 */
