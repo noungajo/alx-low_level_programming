@@ -1,6 +1,10 @@
 #include<stdio.h>
-
-int main(void){
+/*
+* Description: Run puts and print statement
+* Return: Return 0 to exit function
+*/
+int main()
+{
 	puts("\"Programming is like building a multilingual puzzle");
 	return 0;
 }

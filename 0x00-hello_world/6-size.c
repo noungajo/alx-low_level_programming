@@ -1,14 +1,18 @@
 #include<stdio.h>
+/*
+* Description: Run puts and print statement
+* Return: Return 0 to exit function
+*/
 int main()
 {
-	int i;
+	int x;
 	char c;
 	long int l;
 	long long int ll;
 	float f;
 
 	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
-	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(x));
 	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(l));
 	printf("Size of a long long int: %lu byte(s)\n",
 	       (unsigned long)sizeof(ll));
