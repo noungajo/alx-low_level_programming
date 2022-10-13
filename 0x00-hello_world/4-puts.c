@@ -1,12 +1,12 @@
-#include<stdio.h>
-/*
-* main - this programm make a printf using puts
-* Description: Run puts and print statement
-* Return: Return 0 to exit function
-*/
-int main()
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return 0;
+	return (0);
 }
-
