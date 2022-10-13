@@ -3,7 +3,7 @@
 * Description: Run puts and print statement
 * Return: Return 0 to exit function
 */
-int main()
+int main(void)
 {
 	int x;
 	char c;
@@ -18,5 +18,5 @@ int main()
 	       (unsigned long)sizeof(ll));
 	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 
-	return 0;
+	return (0);
 	}
