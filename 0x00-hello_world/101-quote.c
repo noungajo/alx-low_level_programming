@@ -12,7 +12,7 @@ int main(void)
 	size =
 	     sizeof("and that piece of art is useful\" - Dora Kopar, 2015-10-19");
 	write(standard_error,
-		"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+		"and that piece of art is useful\" - Dora Korpar, 2015-10-19 \n",
 		size);
 	return (1);
 }
