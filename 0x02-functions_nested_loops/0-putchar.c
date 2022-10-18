@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * 0-putchar - Write a program that prints _putchar, followed by a new line.
+ * main - 0-putchar - Write a program that prints _putchar, followed by a new line.
  * The program should return 0
  * Return: On success 1.
  * The program should return 0
@@ -17,5 +17,5 @@ int main(void)
 		_putchar("_putchar"[i]);
 	}
 	_putchar('\n');
-	return(0);
+	return (0);
 }

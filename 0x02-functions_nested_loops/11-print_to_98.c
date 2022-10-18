@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Write a function that prints all natural numbers from n to 98, followed by a new line.
+ * main - Write a function that prints all natural numbers from n to 98, followed by a new line.
  * Prototype: void print_to_98(int n);
  * Description: 
  * Numbers must be separated by a comma, followed by a space

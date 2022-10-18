@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Write a function that prints the 9 times table, starting with 0.
+ * main - Write a function that prints the 9 times table, starting with 0.
  * Prototype: void times_table(void);
  * Format: see example
  * Description: using the main function
