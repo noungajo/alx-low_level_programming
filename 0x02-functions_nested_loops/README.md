@@ -1,1 +1,1 @@
-0x02. C - Functions, nested loops
+this directory concern the functions and nested loop

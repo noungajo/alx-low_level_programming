@@ -1,21 +1,16 @@
 #include "main.h"
 
 /**
- * main - sign - Write a function that prints the sign of a number.
- * Prototype: int print_sign(int n);
- * Returns 1 and prints + if n is greater than zero
- * Returns 0 and prints 0 if n is zero
- * Returns -1 and prints - if n is less than zero
- * Description: using the main function
- * Return: void
+ * print_sign - function that prints the sign of a number.
+ * @n: The input number to print sign,
+ * Return: int.
  */
-
 
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-		 _putchar('+');
+		_putchar('+');
 		return (1);
 	}
 	else if (n == 0)

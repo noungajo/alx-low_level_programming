@@ -1,20 +1,17 @@
 #include "main.h"
 
 /**
- * main - Write a function that checks for alphabetic character.
- * Prototype: int _isalpha(int c);
- * Returns 1 if c is a letter, lowercase or uppercase
- * Returns 0 otherwise
- * Description: using the main function
- * Return: void
+ * _isalpha - function that checks for
+ * lowercase and uppercase character.
+ * @c: input character
+ * Return: 1 if lowercase or uppercase and 0 otherwise
  */
-
 
 int _isalpha(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	if (c >= 65 && c <= 90)
 		return (1);
-	else if (c >= 'A' && c <= 'z')
+	if (c >= 97 && c <= 122)
 		return (1);
 	else
 		return (0);

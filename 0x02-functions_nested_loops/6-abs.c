@@ -1,22 +1,18 @@
 #include "main.h"
 
 /**
- * main - Write a function that computes the absolute value of an integer.
- * Prototype: int _abs(int);
- * FYI: The standard library provides a similar function: abs. Run man abs to learn more.
- * Description: using the main function
- * Return: void
+ * _abs - function that computes the absolute value of an integer.
+ * @a: The input number to compute absolute value
+ * Return: int.
  */
 
-
-int _abs(int n)
+int _abs(int a)
 {
-	if (n >= 0)
+	if (a < 0)
 	{
-		return (n);
+		a = (-1) * a;
+		return (a);
 	}
-	else
-	{
-		return (-n);
-	}
+
+		return (a);
 }

@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * main - 0-putchar - Write a program that prints _putchar, followed by a new line.
- * The program should return 0
- * Return: On success 1.
- * The program should return 0
+ * main -  Write a program that prints _putchar, followed by a new line.
+ * Return: Always 0 (Success)
  */
-
 
 int main(void)
 {
-	int i;
-	
-	for (i = 0;  "_putchar"[i] != '\0'; ++i)
+	int i = 0;
+	char p[] = "_putchar";
+
+	while (i < 8)
 	{
-		_putchar("_putchar"[i]);
+		_putchar(p[i]);
+		i += 1;
 	}
 	_putchar('\n');
 	return (0);
