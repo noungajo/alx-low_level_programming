@@ -1,26 +1,27 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_square - function that prints a square, followed by a new line
- * @size: size of square
- * Return: nothing.
+ * print_square -  prints a square, followed by a new line.
+ * @size: input int
+ * Return: Nothing.
  */
 
 void print_square(int size)
 {
-	int col, row;
+	int i;
+	int j;
 
-	if (size > 0)
+	if (size <= 0)
+		_putchar('\n');
+	else
 	{
-		for (row = 0; row < size; row++)
+		for (i = 0; i < size; i++)
 		{
-			for (col = 0; col < size; col++)
+			for (j = 0; j < size; j++)
 			{
-				_putchar(35);
+				_putchar('#');
 			}
 			_putchar('\n');
 		}
 	}
-	else
-		_putchar('\n');
 }

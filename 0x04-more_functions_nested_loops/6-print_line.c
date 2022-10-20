@@ -1,24 +1,23 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_line - function that draws a straight line in the terminal.
- * @n: input value to check
- * Return: nothing.
+ * print_line - draws a straight line in the terminal.
+ * @n: input integer number
+ * Return: Nothing.
  */
 
 void print_line(int n)
 {
-	int i = 0;
+	int i;
 
-	while (i < n)
+	if (n <= 0)
+		_putchar('\n');
+	else
 	{
-		if (n > 0)
+		for (i = 0; i < n; i++)
 		{
-			_putchar(95);
-			i += 1;
+			_putchar('_');
 		}
-		else
-			_putchar('\n');
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
