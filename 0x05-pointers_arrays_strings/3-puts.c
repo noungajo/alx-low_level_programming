@@ -1,15 +1,14 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * Function - prints a string, followed by a new line, to stdout..
+ * _puts - Print given string
+ * @str: String to print
  *
- * Return: Always void.
+ * Return: 0
  */
- 
 void _puts(char *str)
 {
-	int i = 0;
-	
+	int i;
+
 	while (*(str + i) != '\0')
 	{
 		_putchar(*(str + i));
@@ -17,4 +16,3 @@ void _puts(char *str)
 	}
 	_putchar('\n');
 }
-

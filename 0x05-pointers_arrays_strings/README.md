@@ -1,1 +1,1 @@
-This repository talk about the pointer , and arrays 
+Projects looking at pointers and arrays.

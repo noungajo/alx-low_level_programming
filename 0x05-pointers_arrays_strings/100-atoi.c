@@ -1,37 +1,36 @@
-#include "main.h"
-
 /**
- * _atoi - function that convert a string to an integer
- * @s: string to convert
- * Return: int
+ * _atoi - Find and print the first number in a string as an int
+ * @s: String to convert to int
+ *
+ * Return: The int
  */
-
 int _atoi(char *s)
 {
-	int i = 0;
-	int n = 0;
-	int signo = 1;
+	int i, n, m;
 
-
-	while ((s[i] < '0' || s[i] > '9') && s[i] != 0)
+	i = n = m = 0;
+	while (*(s + i) != '\0')
 	{
-		if (s[i] == '-')
-			signo *= -1;
+		if (*(s + i) == '-')
+			m++;
+		if (*(s + i) >= '0' && *(s + i) <= '9')
+		{
+			while (*(s + i) >= '0' && *(s + i) <= '9')
+			{
+				if (n == 0)
+				{
+					n = (n * 10) + (*(s + i) - '0');
+					n *= -1;
+				}
+				else
+					n = (n * 10) - (*(s + i) - '0');
+				i++;
+			}
+			if (m % 2 == 0)
+				n *= -1;
+			return (n);
+		}
 		i++;
 	}
-	while ((s[i] >= '0' && s[i] <= '9') && s[i] != 0)
-	{
-		if (n >= 0)
-		{
-			n = n * 10 - (s[i] - '0');
-			i++;
-		}
-		else
-		{
-			n = n * 10 - (s[i] - '0');
-			i++;
-		}
-	}
-	signo *= -1;
-	return (n * signo);
+	return (0);
 }
